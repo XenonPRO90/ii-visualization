@@ -4,6 +4,7 @@ import SectionHeader from '@/components/SectionHeader';
 import InfoBlock from '@/components/InfoBlock';
 import LessonNavigation from '@/components/LessonNavigation';
 import { getNextLesson, getPreviousLesson } from '@/lib/courseData';
+import Image from 'next/image';
 
 export default function Lesson() {
   const moduleSlug = 'module-0';
@@ -82,6 +83,16 @@ export default function Lesson() {
               И самое крутое — он работает <strong>почти автономно</strong>. Ты даешь задачу,
               уходишь попить кофе, возвращаешься — готово.
             </p>
+
+            <div className="my-8 rounded-lg overflow-hidden border border-[var(--border)]">
+              <Image
+                src="/screens/1_X5HVSnKyzBYSaiwrciIrxQ.webp"
+                alt="Welcome to Claude Code"
+                width={1200}
+                height={675}
+                className="w-full h-auto"
+              />
+            </div>
 
             <SectionHeader>ДЛЯ КОГО ЭТО</SectionHeader>
 

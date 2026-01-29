@@ -5,6 +5,7 @@ import InfoBlock from '@/components/InfoBlock';
 import CodeBlock from '@/components/CodeBlock';
 import LessonNavigation from '@/components/LessonNavigation';
 import { getNextLesson, getPreviousLesson } from '@/lib/courseData';
+import Image from 'next/image';
 
 export default function Lesson() {
   const moduleSlug = 'module-0';
@@ -69,6 +70,16 @@ export default function Lesson() {
                 <p className="text-sm text-[var(--text-secondary)] mt-2">
                   Нажми на большую синюю кнопку "Download for Mac"
                 </p>
+
+                <div className="my-6 rounded-lg overflow-hidden border border-[var(--border)]">
+                  <Image
+                    src="/screens/Снимок экрана 2569-01-29 в 21.00.11.png"
+                    alt="Visual Studio Code download page"
+                    width={1600}
+                    height={900}
+                    className="w-full h-auto"
+                  />
+                </div>
               </div>
 
               <div>

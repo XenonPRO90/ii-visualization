@@ -5,6 +5,7 @@ import InfoBlock from '@/components/InfoBlock';
 import CodeBlock from '@/components/CodeBlock';
 import LessonNavigation from '@/components/LessonNavigation';
 import { getNextLesson, getPreviousLesson } from '@/lib/courseData';
+import Image from 'next/image';
 
 export default function Lesson() {
   const moduleSlug = 'module-0';
@@ -72,6 +73,16 @@ export default function Lesson() {
                 <p>
                   Кликни на синюю кнопку "Install". Установка займет несколько секунд.
                 </p>
+
+                <div className="my-6 rounded-lg overflow-hidden border border-[var(--border)]">
+                  <Image
+                    src="/screens/Снимок экрана 2569-01-29 в 21.02.48.png"
+                    alt="Claude Code extension for VS Code"
+                    width={1600}
+                    height={200}
+                    className="w-full h-auto"
+                  />
+                </div>
               </div>
             </div>
 
