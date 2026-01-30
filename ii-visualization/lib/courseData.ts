@@ -92,10 +92,42 @@ export const courseData: Module[] = [
   },
   {
     id: 'module-2',
-    title: 'Модуль 2: Голосовое кодирование',
+    title: 'Модуль 2: Публикация проекта в инет',
     slug: 'module-2',
     isActive: false,
-    lessons: [],
+    lessons: [
+      // Supabase
+      { id: 'lesson-1', title: 'Что такое Supabase и зачем он нужен', slug: 'lesson-1', isActive: false },
+      { id: 'lesson-2', title: 'Создаём проект в Supabase', slug: 'lesson-2', isActive: false },
+      { id: 'lesson-3', title: 'Создаём первую таблицу', slug: 'lesson-3', isActive: false },
+      { id: 'lesson-4', title: 'Подключаем Supabase к проекту', slug: 'lesson-4', isActive: false },
+      { id: 'lesson-5', title: 'Сохраняем и показываем данные', slug: 'lesson-5', isActive: false },
+      // Vercel
+      { id: 'lesson-6', title: 'Что такое хостинг и зачем нужен Vercel', slug: 'lesson-6', isActive: false },
+      { id: 'lesson-7', title: 'Публикуем проект на Vercel', slug: 'lesson-7', isActive: false },
+      { id: 'lesson-8', title: 'Автоматические обновления', slug: 'lesson-8', isActive: false },
+      // Домен
+      { id: 'lesson-9', title: 'Покупаем домен', slug: 'lesson-9', isActive: false },
+      { id: 'lesson-10', title: 'Подключаем домен к Vercel', slug: 'lesson-10', isActive: false },
+      // Авторизация
+      { id: 'lesson-11', title: 'Зачем нужна авторизация', slug: 'lesson-11', isActive: false },
+      { id: 'lesson-12', title: 'Настраиваем вход через Google', slug: 'lesson-12', isActive: false },
+      { id: 'lesson-13', title: 'Добавляем вход в приложение', slug: 'lesson-13', isActive: false },
+      // RLS
+      { id: 'lesson-14', title: 'Что такое RLS и зачем он нужен', slug: 'lesson-14', isActive: false },
+      { id: 'lesson-15', title: 'Настраиваем RLS-политики', slug: 'lesson-15', isActive: false },
+      // Оплаты
+      { id: 'lesson-16', title: 'Как работают платёжные системы', slug: 'lesson-16', isActive: false },
+      { id: 'lesson-17', title: 'Правила платёжных систем', slug: 'lesson-17', isActive: false },
+      { id: 'lesson-18', title: 'Подключаем NowPayments', slug: 'lesson-18', isActive: false },
+      { id: 'lesson-19', title: 'Вебхук: обработка оплаты', slug: 'lesson-19', isActive: false },
+      { id: 'lesson-20', title: 'Оплата через подписку на тг-канал', slug: 'lesson-20', isActive: false },
+      { id: 'lesson-21', title: 'ТГ-бот с уведомлениями о $$$', slug: 'lesson-21', isActive: false },
+      { id: 'lesson-22', title: 'ЮKassa: платежка для России', slug: 'lesson-22', isActive: false },
+      { id: 'lesson-23', title: 'Stripe: международные платежи', slug: 'lesson-23', isActive: false },
+      // Telegram-бот
+      { id: 'lesson-24', title: 'Ставим бота на сервер Railway', slug: 'lesson-24', isActive: false },
+    ],
   },
   {
     id: 'module-3',
