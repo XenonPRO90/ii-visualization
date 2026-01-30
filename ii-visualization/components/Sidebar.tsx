@@ -49,14 +49,14 @@ export default function Sidebar({ currentModule, currentLesson }: SidebarProps) 
               >
                 <div className="flex items-center gap-2 flex-1">
                   {isExpanded ? (
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className="w-4 h-4 flex-shrink-0" />
                   ) : (
-                    <ChevronRight className="w-4 h-4" />
+                    <ChevronRight className="w-4 h-4 flex-shrink-0" />
                   )}
-                  <span className="text-sm font-medium truncate">
+                  <span className="text-sm font-medium flex-1">
                     {module.title.split(': ')[1]}
                   </span>
-                  {!module.isActive && <Lock className="w-3 h-3 ml-auto" />}
+                  {!module.isActive && <Lock className="w-3 h-3 flex-shrink-0" />}
                 </div>
               </button>
 
@@ -78,19 +78,19 @@ export default function Sidebar({ currentModule, currentLesson }: SidebarProps) 
                         }`}
                       >
                         <Circle
-                          className={`w-2 h-2 ${
+                          className={`w-2 h-2 flex-shrink-0 ${
                             isCurrentLesson ? 'fill-white' : ''
                           }`}
                         />
-                        <span className="truncate">{lesson.title}</span>
+                        <span className="flex-1">{lesson.title}</span>
                       </Link>
                     ) : (
                       <div
                         key={lesson.id}
                         className="flex items-center gap-2 px-3 py-2 rounded text-sm text-[var(--text-secondary)] opacity-50 cursor-not-allowed"
                       >
-                        <Lock className="w-3 h-3" />
-                        <span className="truncate">{lesson.title}</span>
+                        <Lock className="w-3 h-3 flex-shrink-0" />
+                        <span className="flex-1">{lesson.title}</span>
                       </div>
                     );
                   })}
