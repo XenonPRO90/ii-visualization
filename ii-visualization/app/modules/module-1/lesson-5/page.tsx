@@ -106,7 +106,7 @@ export default function Lesson() {
                 Модули 2-4 находятся в разработке и скоро будут доступны:
               </p>
               <ul className="space-y-2">
-                <li><strong>Модуль 2:</strong> Голосовое кодирование с AquaVoice</li>
+                <li><strong>Модуль 2:</strong> Публикация проекта в инет</li>
                 <li><strong>Модуль 3:</strong> Проекты для предпринимателей</li>
                 <li><strong>Модуль 4:</strong> Продвинутые техники</li>
               </ul>

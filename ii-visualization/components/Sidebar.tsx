@@ -40,26 +40,23 @@ export default function Sidebar({ currentModule, currentLesson }: SidebarProps) 
           return (
             <div key={module.id} className="mb-2">
               <button
-                onClick={() => module.isActive && toggleModule(module.slug)}
+                onClick={() => toggleModule(module.slug)}
                 className={`w-full flex items-center justify-between px-3 py-2 rounded text-left transition-colors ${
                   isCurrentModule
                     ? 'bg-[var(--bg-card)] text-[var(--text-primary)]'
                     : 'hover:bg-[var(--bg-card)] text-[var(--text-secondary)]'
-                } ${!module.isActive ? 'opacity-50 cursor-not-allowed' : ''}`}
+                } ${!module.isActive ? 'opacity-70' : ''}`}
               >
                 <div className="flex items-center gap-2 flex-1">
-                  {module.isActive ? (
-                    isExpanded ? (
-                      <ChevronDown className="w-4 h-4" />
-                    ) : (
-                      <ChevronRight className="w-4 h-4" />
-                    )
+                  {isExpanded ? (
+                    <ChevronDown className="w-4 h-4" />
                   ) : (
-                    <Lock className="w-4 h-4" />
+                    <ChevronRight className="w-4 h-4" />
                   )}
                   <span className="text-sm font-medium truncate">
                     {module.title.split(': ')[1]}
                   </span>
+                  {!module.isActive && <Lock className="w-3 h-3 ml-auto" />}
                 </div>
               </button>
 
@@ -68,8 +65,9 @@ export default function Sidebar({ currentModule, currentLesson }: SidebarProps) 
                   {module.lessons.map((lesson) => {
                     const isCurrentLesson =
                       isCurrentModule && currentLesson === lesson.slug;
+                    const isLessonActive = module.isActive && lesson.isActive;
 
-                    return (
+                    return isLessonActive ? (
                       <Link
                         key={lesson.id}
                         href={`/modules/${module.slug}/${lesson.slug}`}
@@ -86,6 +84,14 @@ export default function Sidebar({ currentModule, currentLesson }: SidebarProps) 
                         />
                         <span className="truncate">{lesson.title}</span>
                       </Link>
+                    ) : (
+                      <div
+                        key={lesson.id}
+                        className="flex items-center gap-2 px-3 py-2 rounded text-sm text-[var(--text-secondary)] opacity-50 cursor-not-allowed"
+                      >
+                        <Lock className="w-3 h-3" />
+                        <span className="truncate">{lesson.title}</span>
+                      </div>
                     );
                   })}
                 </div>
