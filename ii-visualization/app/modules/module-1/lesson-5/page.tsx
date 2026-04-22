@@ -26,7 +26,7 @@ export default function Lesson() {
           />
 
           <div className="text-sm text-[var(--text-secondary)] mb-2">
-            МОДУЛЬ 1: ОСНОВЫ РАБОТЫ • Урок 5 из 5
+            МОДУЛЬ 1: ОСНОВЫ РАБОТЫ • Урок 5 из 9
           </div>
           <h1 className="text-4xl font-bold mb-8">Документация и чек-листы</h1>
 
@@ -84,36 +84,18 @@ export default function Lesson() {
               </p>
             </InfoBlock>
 
-            <SectionHeader>ИТОГИ МОДУЛЯ 1</SectionHeader>
+            <SectionHeader>ЧТО ДАЛЬШЕ</SectionHeader>
 
             <p>
-              Поздравляю! Теперь ты знаешь основы вайб-кодинга:
+              Документация и чек-листы — это фундамент. Теперь, когда ты умеешь планировать до кода, агент работает совсем по-другому. Без хаоса, с чётким маршрутом.
             </p>
 
-            <div className="bg-[var(--bg-secondary)] p-6 rounded-lg my-6">
-              <ul className="space-y-2">
-                <li>✅ Интерфейс Claude Code</li>
-                <li>✅ Как формулировать запросы</li>
-                <li>✅ Работа с файлами</li>
-                <li>✅ Правило 80/20</li>
-                <li>✅ Документация СНАЧАЛА</li>
-              </ul>
-            </div>
-
-            <div className="bg-gradient-to-r from-purple-900/30 to-indigo-900/30 rounded-lg border border-[var(--accent-purple)]/50 p-8 my-8">
-              <h3 className="text-2xl font-bold mb-3">Следующие модули</h3>
-              <p className="text-[var(--text-secondary)] mb-4">
-                Модули 2-4 находятся в разработке и скоро будут доступны:
-              </p>
-              <ul className="space-y-2">
-                <li><strong>Модуль 2:</strong> Публикация проекта в инет</li>
-                <li><strong>Модуль 3:</strong> Проекты для предпринимателей</li>
-                <li><strong>Модуль 4:</strong> Продвинутые техники</li>
-              </ul>
-            </div>
+            <p>
+              В следующем уроке — про то, как быстро передавать Claude визуальный контекст через скриншоты и прикреплённые файлы. Это сильно ускоряет любой разговор.
+            </p>
 
             <p className="text-lg font-semibold mt-8">
-              Ты прошел основы! Теперь — практика! 🚀
+              Погнали учиться показывать! 🚀
             </p>
           </div>
 

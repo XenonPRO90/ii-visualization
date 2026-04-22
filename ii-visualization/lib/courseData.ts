@@ -50,6 +50,18 @@ export const courseData: Module[] = [
         slug: 'lesson-5',
         isActive: true,
       },
+      {
+        id: 'lesson-6',
+        title: 'Твой первый результат в браузере',
+        slug: 'lesson-6',
+        isActive: true,
+      },
+      {
+        id: 'lesson-7',
+        title: 'Сохраняем работу в облаке',
+        slug: 'lesson-7',
+        isActive: true,
+      },
     ],
   },
   {
@@ -88,6 +100,30 @@ export const courseData: Module[] = [
         slug: 'lesson-5',
         isActive: true,
       },
+      {
+        id: 'lesson-6',
+        title: 'Скриншоты и файлы',
+        slug: 'lesson-6',
+        isActive: true,
+      },
+      {
+        id: 'lesson-7',
+        title: 'Несколько чатов параллельно',
+        slug: 'lesson-7',
+        isActive: true,
+      },
+      {
+        id: 'lesson-8',
+        title: 'Когда что-то не работает',
+        slug: 'lesson-8',
+        isActive: true,
+      },
+      {
+        id: 'lesson-9',
+        title: 'CLAUDE.md — твои постоянные правила',
+        slug: 'lesson-9',
+        isActive: true,
+      },
     ],
   },
   {
@@ -115,8 +151,33 @@ export const courseData: Module[] = [
     id: 'module-4',
     title: 'Модуль 4: Продвинутые техники',
     slug: 'module-4',
-    isActive: false,
-    lessons: [],
+    isActive: true,
+    lessons: [
+      {
+        id: 'lesson-1',
+        title: 'Режимы работы Claude Code',
+        slug: 'lesson-1',
+        isActive: true,
+      },
+      {
+        id: 'lesson-2',
+        title: 'Git как профи: ветки, откаты, история',
+        slug: 'lesson-2',
+        isActive: true,
+      },
+      {
+        id: 'lesson-3',
+        title: 'Тюнинг Claude: Skills, MCP, Hooks',
+        slug: 'lesson-3',
+        isActive: true,
+      },
+      {
+        id: 'lesson-4',
+        title: 'Worktrees и Agent Teams',
+        slug: 'lesson-4',
+        isActive: true,
+      },
+    ],
   },
 ];
 
