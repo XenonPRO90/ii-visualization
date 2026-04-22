@@ -7,8 +7,8 @@ import LessonNavigation from '@/components/LessonNavigation';
 import { getNextLesson, getPreviousLesson } from '@/lib/courseData';
 
 export default function Lesson() {
-  const moduleSlug = 'module-1';
-  const lessonSlug = 'lesson-8';
+  const moduleSlug = 'module-3';
+  const lessonSlug = 'lesson-4';
   const nextLesson = getNextLesson(moduleSlug, lessonSlug);
   const previousLesson = getPreviousLesson(moduleSlug, lessonSlug);
 
@@ -21,13 +21,13 @@ export default function Lesson() {
           <Breadcrumbs
             items={[
               { label: 'Главная', href: '/' },
-              { label: 'Модуль 1: Основы работы', href: '/modules/module-1' },
+              { label: 'Модуль 3: Методология вайб-кодинга', href: '/modules/module-3' },
               { label: 'Когда что-то не работает' },
             ]}
           />
 
           <div className="text-sm text-[var(--text-secondary)] mb-2">
-            МОДУЛЬ 1: ОСНОВЫ РАБОТЫ • Урок 8 из 9
+            МОДУЛЬ 3: МЕТОДОЛОГИЯ ВАЙБ-КОДИНГА • Урок 4 из 4
           </div>
           <h1 className="text-4xl font-bold mb-8">Когда что-то не работает</h1>
 
@@ -258,11 +258,15 @@ export default function Lesson() {
             </div>
 
             <p>
-              В следующем уроке разберём один из самых мощных инструментов Claude Code — файл CLAUDE.md. Это способ дать агенту постоянные правила, которые он будет помнить всегда, в каждом чате.
+              Модуль 3 завершён. У тебя теперь есть методология — ты планируешь, пишешь доки, задаёшь правила, быстро чинишь поломки. Это фундамент серьёзной работы.
+            </p>
+
+            <p>
+              В финальном Модуле 4 — продвинутые техники. Режимы работы Claude, Git на уровне профи, тюнинг агента через Skills, MCP и Hooks, плюс параллельная работа нескольких агентов. Уровень, на котором ты перестаёшь думать о коде и думаешь только о продукте.
             </p>
 
             <p className="text-lg font-semibold mt-8">
-              Погнали учить Claude работать по-твоему! 🚀
+              Погнали в финальный Модуль 4! 🚀
             </p>
           </div>
 

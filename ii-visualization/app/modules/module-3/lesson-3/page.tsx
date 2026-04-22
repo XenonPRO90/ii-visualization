@@ -7,8 +7,8 @@ import LessonNavigation from '@/components/LessonNavigation';
 import { getNextLesson, getPreviousLesson } from '@/lib/courseData';
 
 export default function Lesson() {
-  const moduleSlug = 'module-1';
-  const lessonSlug = 'lesson-9';
+  const moduleSlug = 'module-3';
+  const lessonSlug = 'lesson-3';
   const nextLesson = getNextLesson(moduleSlug, lessonSlug);
   const previousLesson = getPreviousLesson(moduleSlug, lessonSlug);
 
@@ -21,13 +21,13 @@ export default function Lesson() {
           <Breadcrumbs
             items={[
               { label: 'Главная', href: '/' },
-              { label: 'Модуль 1: Основы работы', href: '/modules/module-1' },
+              { label: 'Модуль 3: Методология вайб-кодинга', href: '/modules/module-3' },
               { label: 'CLAUDE.md — твои постоянные правила' },
             ]}
           />
 
           <div className="text-sm text-[var(--text-secondary)] mb-2">
-            МОДУЛЬ 1: ОСНОВЫ РАБОТЫ • Урок 9 из 9
+            МОДУЛЬ 3: МЕТОДОЛОГИЯ ВАЙБ-КОДИНГА • Урок 3 из 4
           </div>
           <h1 className="text-4xl font-bold mb-8">CLAUDE.md — твои постоянные правила</h1>
 
@@ -263,33 +263,11 @@ export default function Lesson() {
             <SectionHeader>ЧТО ДАЛЬШЕ</SectionHeader>
 
             <p>
-              Поздравляю! Модуль 1 завершён. Ты прошёл всю базу работы с Claude Code — от интерфейса до продвинутых приёмов.
-            </p>
-
-            <div className="bg-[var(--bg-secondary)] p-6 rounded-lg my-6">
-              <h3 className="font-semibold mb-4">Что ты узнал в Модуле 1:</h3>
-              <ul className="space-y-2 text-sm">
-                <li>✅ Устройство интерфейса Claude Code</li>
-                <li>✅ Как правильно формулировать запросы</li>
-                <li>✅ Работу с файлами и чтение diff</li>
-                <li>✅ Исследование перед разработкой</li>
-                <li>✅ Документацию и чек-листы</li>
-                <li>✅ Скриншоты и /attach как способ дать контекст</li>
-                <li>✅ Параллельную работу в нескольких чатах</li>
-                <li>✅ Что делать, когда что-то не работает</li>
-                <li>✅ CLAUDE.md — постоянные правила агента</li>
-              </ul>
-            </div>
-
-            <p>
-              После следующих модулей ты полноценно освоишь вайб-кодинг. Модуль 4 —
-              продвинутые техники: режимы работы, Git как профи, Skills, MCP, Hooks и
-              параллельные агенты. Это уровень, на котором ты перестаёшь думать о
-              коде и начинаешь думать только о продукте.
+              CLAUDE.md готов — Claude работает по твоим правилам постоянно. В следующем уроке разберём последний столп методологии: что делать, когда что-то перестало работать. Спойлер: ошибки — это нормальная часть работы, паниковать не нужно.
             </p>
 
             <p className="text-lg font-semibold mt-8">
-              Погнали дальше! 🚀
+              Погнали разбираться с поломками! 🚀
             </p>
           </div>
 

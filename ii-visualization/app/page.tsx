@@ -39,7 +39,7 @@ export default function HomePage() {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--accent-purple)] text-white font-bold text-sm">
-                        {index}
+                        {index + 1}
                       </div>
                       <h3 className="text-xl font-semibold">
                         {module.title}
@@ -98,7 +98,7 @@ export default function HomePage() {
               для вайб-кодинга.
             </p>
             <Link
-              href="/modules/module-0/lesson-1"
+              href="/modules/module-1/lesson-1"
               className="inline-block px-6 py-3 bg-[var(--accent-purple)] hover:bg-[var(--accent-indigo)] rounded-lg font-medium transition-colors"
             >
               Начать обучение
