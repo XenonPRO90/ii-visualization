@@ -13,10 +13,10 @@ export default function HomePage() {
           {/* Hero Section */}
           <div className="mb-12">
             <h1 className="text-5xl font-bold mb-4">
-              Добро пожаловать в ИИ-визацию!
+              Обучение по вайб-кодингу
             </h1>
             <p className="text-xl text-[var(--text-secondary)] mb-6">
-              Курс по вайб-кодингу для предпринимателей
+              для партнёров SETUP
             </p>
             <p className="text-[var(--text-secondary)] leading-relaxed">
               Научись создавать приложения, сайты и автоматизации голосом с помощью

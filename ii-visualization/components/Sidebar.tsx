@@ -27,8 +27,8 @@ export default function Sidebar({ currentModule, currentLesson }: SidebarProps) 
     <div className="w-64 h-screen bg-[var(--bg-secondary)] border-r border-[var(--border)] overflow-y-auto fixed left-0 top-0">
       <div className="p-6">
         <Link href="/">
-          <h2 className="text-xl font-bold mb-1">ИИ-визация</h2>
-          <p className="text-sm text-[var(--text-secondary)]">Курс по вайб-кодингу</p>
+          <h2 className="text-xl font-bold mb-1">Обучение по вайб-кодингу</h2>
+          <p className="text-sm text-[var(--text-secondary)]">для партнёров SETUP</p>
         </Link>
       </div>
 

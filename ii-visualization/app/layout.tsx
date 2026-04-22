@@ -4,8 +4,8 @@ import './globals.css';
 import AccessGate from '@/components/AccessGate';
 
 export const metadata: Metadata = {
-  title: 'ИИ-визация | Курс по вайб-кодингу',
-  description: 'Образовательная платформа для изучения вайб-кодинга с Claude Code и AquaVoice',
+  title: 'Обучение по вайб-кодингу для партнёров SETUP',
+  description: 'Курс по вайб-кодингу с Claude Code и AquaVoice для партнёров SETUP',
 };
 
 export default function RootLayout({
