@@ -127,27 +127,6 @@ export const courseData: Module[] = [
     ],
   },
   {
-    id: 'module-2',
-    title: 'Модуль 2: Публикация проекта в инет',
-    slug: 'module-2',
-    isActive: false,
-    lessons: [
-      { id: 'section-1', title: 'База данных', slug: 'section-1', isActive: false },
-      { id: 'section-2', title: 'Хостинги', slug: 'section-2', isActive: false },
-      { id: 'section-3', title: 'Домены', slug: 'section-3', isActive: false },
-      { id: 'section-4', title: 'Авторизация', slug: 'section-4', isActive: false },
-      { id: 'section-5', title: 'Безопасность', slug: 'section-5', isActive: false },
-      { id: 'section-6', title: 'Приём оплат', slug: 'section-6', isActive: false },
-    ],
-  },
-  {
-    id: 'module-3',
-    title: 'Модуль 3: Проекты для предпринимателей',
-    slug: 'module-3',
-    isActive: false,
-    lessons: [],
-  },
-  {
     id: 'module-4',
     title: 'Модуль 4: Продвинутые техники',
     slug: 'module-4',
